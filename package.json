@@ -1,11 +1,12 @@
 {
   "name": "historical-events-finder",
   "version": "1.0.0",
-  "description": "",
+  "description": "search by term through historical records",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node index.js",
+    "build": "webpack --config webpack.config.js --watch"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,24 @@
   },
   "homepage": "https://github.com/jayrbarr/historical-events-finder#readme",
   "devDependencies": {
-    "json-server": "^0.16.1"
+    "@babel/cli": "^7.10.1",
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/preset-react": "^7.10.1",
+    "@webpack-cli/init": "^0.2.2",
+    "babel-loader": "^8.1.0",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "css-loader": "^3.5.3",
+    "json-server": "^0.16.1",
+    "mini-css-extract-plugin": "^0.9.0",
+    "style-loader": "^1.2.1",
+    "terser-webpack-plugin": "^3.0.3",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "workbox-webpack-plugin": "^5.1.3"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   }
 }
