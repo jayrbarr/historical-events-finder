@@ -1,0 +1,9 @@
+#app ul {
+  display: inline-block;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#app li {
+  display: inline-block;
+}
